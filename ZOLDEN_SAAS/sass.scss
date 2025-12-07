@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf), url(fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+
+@mixin flex_liste{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+@mixin flex_image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+}
+@mixin link{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body {
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+.nav1{
+    @include flex_liste();
+    background-color: gray ;
+    align-items: center;
+    line-height: 1;
+    #right a{
+        @include link();
+    }
+}
+.nav2{
+    @include flex_image();
+    align-items: center;
+    #left ul{
+        @include flex_liste();
+        width: 300px;
+    }
+}
+#milieu ul{
+    @include flex_liste();
+}
+.NewIn #cadreFemme{
+    background-image: url(saved/zolden-img-02-1.jpg);
+    width: auto;
+    height: 633px;
+    background-repeat: no-repeat;
+}
+.NewIn{
+    #cadreFemme {
+        align-items: center;
+    } 
+}
