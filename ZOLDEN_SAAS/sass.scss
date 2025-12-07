@@ -25,21 +25,37 @@ body {
     font-family: 'Roboto';
     font-weight: normal;
 }
-.nav1{
-    @include flex_liste();
-    background-color: gray ;
-    align-items: center;
-    line-height: 1;
-    #right a{
-        @include link();
+header{
+    .nav1{
+        @include flex_liste();
+        background-color: gray ;
+        align-items: center;
+        line-height: 1;
+        #right a{
+            @include link();
+        }
+    }
+    .nav2{
+        @include flex_image();
+        align-items: center;
+        #left ul{
+            @include flex_liste();
+            width: 300px;
+        }
     }
 }
-.nav2{
+.NewIn{
+    #cadreFemme {
+        align-items: center;
+    } 
+}
+.categories{
     @include flex_image();
-    align-items: center;
-    #left ul{
-        @include flex_liste();
-        width: 300px;
+    .Accessories{
+        text-align: left;
+    }
+    .Woman{
+        @extend .Accessories;
     }
 }
 #milieu ul{
@@ -51,8 +67,7 @@ body {
     height: 633px;
     background-repeat: no-repeat;
 }
-.NewIn{
-    #cadreFemme {
-        align-items: center;
-    } 
+
+.echantillon{
+    @include flex_image();
 }
