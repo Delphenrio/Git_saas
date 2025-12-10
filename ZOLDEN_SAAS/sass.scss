@@ -60,6 +60,7 @@ header{
 }
 #milieu ul{
     @include flex_liste();
+    max-width: 500px;
 }
 .NewIn #cadreFemme{
     background-image: url(saved/zolden-img-02-1.jpg);
@@ -70,4 +71,9 @@ header{
 
 .echantillon{
     @include flex_image();
+}
+.services{
+    @include flex_liste();
+    justify-content: space-around;
+    text-align: center;
 }

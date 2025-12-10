@@ -50,6 +50,7 @@ header .nav2 #left ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  max-width: 500px;
 }
 
 .NewIn #cadreFemme {
@@ -64,4 +65,12 @@ header .nav2 #left ul {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
 }/*# sourceMappingURL=sass.css.map */
