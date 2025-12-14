@@ -36,6 +36,9 @@ header .nav2 #left ul {
 .NewIn #cadreFemme {
   align-items: center;
 }
+.NewIn #NewIn {
+  border: 2px solid black;
+}
 
 .categories {
   display: flex;
